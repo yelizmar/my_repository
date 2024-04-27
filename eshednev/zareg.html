@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="zareg.css">
+    <title>Вход</title>
+</head>
+<body>
+<div id="header">
+    <h1>Авторизация</h1>
+    <div class="container">
+        <form action="">
+            <label for="usrname">Логин</label>
+            <input type="text" id="usrname" name="usrname" required>
+            <label for="psw">Пароль</label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Должен содержать по меньшей мере одну цифру, одну большую
+        и одну маленькую буквы латинского алфавита и быть в длину не менее 8 символов" required>
+            <div class="button" id="log">
+            </div> <button type="submit">
+            <div id="in"></div>
+                <a href="eshed.html"><span>Вход</span></a>
+                <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"/>
+                </svg>
+        </button>
+            <h2>Не зарегистрирован?</h2>
+            <a href="#"><span>Регистрация</span></a>
+        </form>
+    </div>
+</div>
+
+<div id="message">
+    <h3>Пароль должен содержать:</h3>
+    <p id="letter" class="invalid"><b>Маленькую</b> букву</p>
+    <p id="capital" class="invalid"><b>Заглавную (большую)</b> букву</p>
+    <p id="number" class="invalid"><b>Цифру</b></p>
+    <p id="length" class="invalid">Минимум <b>8 символов</b></p>
+</div>
+</body>
+</html>

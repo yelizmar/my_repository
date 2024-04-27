@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    background-color: #6d6875;
+}
+
+label{
+    font-family: 'Gambetta', serif;
+    color: #6d6875;
+    outline: none;
+}
+
+#header{
+    width: 100%;
+    height: 45%;
+    background-color: #b5838d;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -8px;
+    transition: 800ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: #6d6875;
+    outline: none;
+
+}
+
+h1:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
+}
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 170px;
+    border: 2px solid #ffcdb2;
+    margin: 20px 20px 20px 20px;
+    color: #ffcdb2;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+a {
+    color: #ffcdb2;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#mon {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#mon a {
+    position: relative;
+    transition: all .45s ease-Out;
+}
+
+#un {
+    width: 100%;
+    height: 2.5px;
+    margin-top: 15px;
+    align-self: flex-end;
+    left: -200px;
+    background: #ffcdb2;
+    position: absolute;
+    transition: all .3s ease-Out;
+    bottom: 0;
+}
+
+#mon:hover #un {
+    left: 0;
+}
